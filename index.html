@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/6276db8680.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Weronika.png" class="logo">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <ul id="sidemenu">
+                    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!----<i class="fa-solid fa-bars" onclick="openmenu()"></i> ---->
+            </nav>
+            <div class="header-text">
+                <p> Law | Computer Science | Lifestyle</p>
+                <h1>Hi, I'm <span>Weronika</span> <br> London based creator</h1>
+            </div>
+        </div>
+     </div> 
+     <!--- About Me-->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_6930.jpg"></div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p> </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Projects</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>NFTAID</span><br>Designed and developed a non-fungible tokens (NFTs) marketplace, where at least 20% of every transaction was to be donated to a
+                                    charitable cause.</li>
+                                <li><span>VOLONTVARIOUS</span><br>Created and managed an Olympiad project with an aim to encourage young people to take part in voluntary
+                                    activities.</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Legal Intern </span><br>Strike Capital</li>
+                                <li><span>Adviser</span><br>LSBU Legal Advice Clinic</li>
+                                <li><span>Scheme Participant</span><br>Macfarlanes LLP</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>MSc Computer Science</span><br>University of Law</li>
+                                <li><span>LLB Law</span><br>London South Bank University</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+     </div>
+<!-----Portfolio----->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle"> Portfolio</h1> 
+            <div class="portfolio-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>StudyLine</h2>
+                    <p>CLI flashcard study application</p>
+                    <a href="https://github.com/Wwweero/StudyLine.git">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>TaskManager</h2>
+                    <p>CLI task management system</p>
+                    <a href="https://github.com/Wwweero/TaskManager.git">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-address-card"></i>
+                    <h2>Portfolio website</h2>
+                    <p>HTML | CSS | JS </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+<!--Gallery-->
+    <div id="gallery">
+        <div class="container">
+            <h1 class="subtitle"> Gallery </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/IMG_3357.jpeg.jpg">
+                    <div class="layer">
+                        <h3>Aesthetics</h3>
+                        <p> Swan | August 2024</p>
+                        <a href="https://www.instagram.com/weronika.packo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IMG_3454.jpg">
+                    <div class="layer">
+                        <h3>Architecture</h3>
+                        <p> Senheim | August 2024</p>
+                        <a href="https://www.instagram.com/weronika.packo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                
+                </div>
+                <div class="work">
+                    <img src="images/IMG_4480.jpeg">
+                    <div class="layer">
+                        <h3>Travel</h3>
+                        <p> Cornwall | October 2024</p>
+                        <a href="https://www.instagram.com/weronika.packo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IMG_1335 2.jpeg">
+                    <div class="layer">
+                        <h3>Nature</h3>
+                        <p> Vienna | April 2024</p>
+                        <a href="https://www.instagram.com/weronika.packo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+            </div>
+            <a href="https://www.instagram.com/weronika.packo/" class="btn"> See more</a>
+        </div>
+    </div>
+<!---------Contact------->
+    <div id="contact">
+        <div class="container">
+            
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>weronikapackow@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>07562110231</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/weronikapacko/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Wwweero"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/weronika.packo/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/WeronikaPacko CV 2024.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f7c6d1e8-6789-4810-8998-e45053745e3d">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © WeronikaPacko</p>
+        </div>
+
+    </div>
+
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+    </body>
+</html>
